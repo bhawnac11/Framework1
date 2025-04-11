@@ -6,7 +6,7 @@ public class DataHandler {
     private static Properties prop;
     
     // Declare the config file path here
-    private static final String CONFIG_FILE_PATH = "./src/test/resources/config.properties";
+    String CONFIG_FILE_PATH = AutomationConstant .CONFIG_FILE_PATH ; 
     public static String getProperty(String key) {
         try (FileInputStream fis = new FileInputStream(CONFIG_FILE_PATH)) {
             prop = new Properties();
